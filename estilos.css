@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body::-webkit-scrollbar{
+    background-color: rgb(27, 27, 41);
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgb(253, 253, 253);
+}
+
+header{
+    background-color: rgb(27, 27, 41);
+    padding: 12px;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.banner h1{
+    font-size: 50px;
+}
+
+marquee{
+    position: relative;
+    top: 82px;
+    background-color: rgb(40, 255, 93);
+    color: rgba(0, 0, 0, 0.659);
+    font-weight: bolder;
+}
+
+.menu{
+    position: absolute;
+    left: 70%;
+}
+
+@media screen and (max-width: 1336px){
+    .menu{
+        display: none;
+    }
+}
+
+.menu a{
+   color: white;
+   text-decoration: none;
+   font-family: sans-serif;
+   margin: 0px 15px 0px 0px;
+   padding: 2px;
+}
+
+.menu a:hover{
+    color: rgb(255, 93, 93);
+}
+
+section{
+    position: relative;
+    top: 78px;
+    background-color: rgb(27, 27, 41);
+    justify-content: center;
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}
+
+.titulo h1{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.796);
+    margin: 10px 40px 80px 40px;
+    text-shadow: 2px 2px 2px rgba(0, 255, 64, 0.856);
+    animation-name: a;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a{
+    0%{
+        text-shadow: 2px 2px 2px rgba(0, 255, 64, 0.856);
+        transform: translateX(0);
+    }
+    50%{
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.856);
+        transform: translateY(5%);
+    }
+}
+
+section a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid rgba(0, 255, 64, 0.856);
+    padding: 12px;
+    box-shadow: 3px 3px 3px white;
+    border-radius: 3px;
+    background-color: rgb(0, 255, 64);
+}
+
+i{
+    background-color: rgba(0, 0, 0, 0.693);
+}
+
+article{
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+article h1{
+    font-size: 26px;
+    font-weight: 900;
+    color: rgba(41, 41, 41, 0.788);
+}
+
+article h3{
+    color: rgba(41, 41, 41, 0.774);
+}
+
+aside{
+    position: relative;
+    top: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(170, 170, 170, 0.419);
+}
+
+.cuadro{
+    border: 1px solid rgba(187, 187, 187, 0);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 3px 3px 3px white;
+    width: 350px;
+    text-align: center;
+}
+
+.cuadro a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid rgba(0, 255, 64, 0.856);
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(100, 100, 100, 0.707);
+    border-radius: 3px;
+    background-color: rgb(0, 255, 64);
+}
+
+li{
+    color: rgb(65, 64, 64);
+    font-weight: 600;
+}
+
+.cuadro h4{
+    font-weight: 600;
+    color: rgb(0, 60, 13);
+}
+
+.cuadro h1{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(79, 79, 79);
+}
+
+.cuadro h5{
+    color: rgb(255, 81, 0);
+    font-weight: 900;
+}
